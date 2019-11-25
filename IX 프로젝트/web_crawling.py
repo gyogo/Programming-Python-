@@ -18,5 +18,7 @@ if __name__ == '__main__':
         print(link)
         html+="<a href='{}'>{}</a><br />".format(link,title)
     html=="</body></html>"
+    outputSoup = BeautifulSoup(html,"lxml")
+    prettyHtml = str(outputSoup.prettify())
     with open("유미의세포.html","w",encoding="utf-8") as f:
-        f.write(html)
+        f.write(prettyHtml)
