@@ -11,4 +11,7 @@ if __name__ == '__main__':
     cartoon_titles = soup.find_all("td",attrs={"class":"title"})
     for cartoon_title in cartoon_titles:
         title = cartoon_title.find("a").text
+        link = cartoon_title.find("a").get("href")
+        link = "https://comic.naver.com"+link
         print(title)
+        print(link)
