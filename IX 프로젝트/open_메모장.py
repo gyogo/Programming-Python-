@@ -18,5 +18,13 @@ if __name__=='__main__':
     pag.press("hangul")
     pag.hotkey('ctrl', 's')
     pag.sleep(1)
+    pag.press("hangul")
+    pag.typewrite("C:\\Users\\")
+    pag.press("hangul")
+    pag.typewrite("박진아")
+    pag.press("hangul")
+    pag.typewrite("\\Desktop")
+    pag.press("hangul")
     pag.typewrite("bkdlTjsdnjfem")
+    pag.press("hangul")
 
